@@ -1,1 +1,345 @@
-{"codigos_iaph":180030001,"latitud_s":-3.65729999675,"tipologiaList":{"tipologia":[{"crono_fin":null,"den_etnia":null,"den_tipologia":{"@id":"iaph:e-Iglesias_parroquiales","rdfs:label":"Iglesias parroquiales","prov:wasAssociatedWith":[{"@id":""},{"@id":""}],"@type":"iaph:Objetos_inmuebles"},"denom_acti":{"@id":"iaph:e-Ceremonia_cristiana","rdfs:label":"Ceremonia cristiana","prov:wasAssociatedWith":[{"@id":""},{"@id":""}],"@type":"iaph:Actividad"},"crono_ini":1587,"periodos_cod":"9.2659.2692","crono_ini_cod":null,"den_etnia_cod":null,"crono_fin_cod":null,"periodos":{"@id":"iaph:e-Edad_Moderna","rdfs:label":"Edad Moderna","prov:wasAssociatedWith":[{"@id":"http://es.dbpedia.org/resource/Edad_Moderna"},{"@id":""}],"@type":"iaph:Periodos_historicos"},"denom_acti_cod":"1.3114.3122.3154.3162","den_estilo_cod":4.5498,"den_estilo":{"@id":"iaph:e-Renacimiento_Estilo","rdfs:label":"Renacimiento (Estilo)","prov:wasAssociatedWith":[{"@id":"http://es.dbpedia.org/resource/Estilo_renacentista"},{"@id":""}],"@type":"iaph:Estilo"},"den_tipologia_cod":"7.492.494.497.509.516.970.14459"},{"crono_fin":null,"den_etnia":null,"den_tipologia":{"@id":"iaph:e-Iglesias_parroquiales","rdfs:label":"Iglesias parroquiales","prov:wasAssociatedWith":[{"@id":""},{"@id":""}],"@type":"iaph:Objetos_inmuebles"},"denom_acti":{"@id":"iaph:e-Ceremonia_cristiana","rdfs:label":"Ceremonia cristiana","prov:wasAssociatedWith":[{"@id":""},{"@id":""}],"@type":"iaph:Actividad"},"crono_ini":null,"periodos_cod":"9.2659.2692","den_etnia_cod":null,"crono_fin_cod":null,"periodos":{"@id":"iaph:e-Edad_Moderna","rdfs:label":"Edad Moderna","prov:wasAssociatedWith":[{"@id":"http://es.dbpedia.org/resource/Edad_Moderna"},{"@id":""}],"@type":"iaph:Periodos_historicos"},"denom_acti_cod":"1.3114.3122.3154.3162","den_estilo_cod":"4.5472.5473","den_estilo":{"@id":"iaph:e-Mudéjar","rdfs:label":"Mudéjar","prov:wasAssociatedWith":[{"@id":"http://es.dbpedia.org/resource/Arte_mudéjar"},{"@id":""}],"@type":"iaph:Estilo"},"den_tipologia_cod":"7.492.494.497.509.516.970.14459"}]},"proteccion_s":"SI","provincia":{"schema:name":"Granada","foaf:name":"Granada","@id":"http://es.dbpedia.org/resource/Granada","@type":"schema:State"},"proteccionList":{"proteccion":{"pagina":null,"fecha":"07/12/1981","estado":"Inscrito","numero":null,"figura":"BIC","den_publica":"BOE","tipologia":"Monumento"}},"identifica":{"descripcion":{"@text":"La iglesia de planta rectangular, consta de tres naves con crucero separadas por pilares cruciformes que sostienen arcos de medio punto. Se cubre la nave central con artesonado de tirantes y racimos dorados. El techo de la capilla mayor es un artesonado mudéjar con rica lacería. Las naves o capillas laterales tienen bóveda de crucería.\nLa torre situada a los pies de la iglesia es de dos cuerpos y campanario separados por pequeñas cornisas. Sufrió grandes desperfectos en el terremoto del 56. Los muros de la iglesia son de fábrica de ladrillo con cajones de mampostería y tapial.","Resources":[]},"tipo":"i","codigo":"01180030001","estado":"Aceptada","raac":null,"municipio":{"schema:name":"Albolote","foaf:name":"Albolote","@id":"http://es.dbpedia.org/resource/Albolote","@type":"schema:City"},"caracterizacion":"Arquitectónica","codigosipha":180030001,"provincia":{"schema:name":"Granada","foaf:name":"Granada","@id":"http://es.dbpedia.org/resource/Granada","@type":"schema:State"},"dat_historico":"Para su construcción se demolió la antigua iglesia existente en el año 1580. Ambrosio de Vico intervino en 1587 en la ejecución de las trazas de la iglesia que habría de ser de cantería de piedra del Cuibillas.","pi_pi_id":null,"denominacion":"Iglesia de la Encarnación","dir_postal":null,"id":9232,"otr_denom":"Otra"},"clob":{"descripcion":{"@text":"La iglesia de planta rectangular, consta de tres naves con crucero separadas por pilares cruciformes que sostienen arcos de medio punto. Se cubre la nave central con artesonado de tirantes y racimos dorados. El techo de la capilla mayor es un artesonado mudéjar con rica lacería. Las naves o capillas laterales tienen bóveda de crucería.\nLa torre situada a los pies de la iglesia es de dos cuerpos y campanario separados por pequeñas cornisas. Sufrió grandes desperfectos en el terremoto del 56. Los muros de la iglesia son de fábrica de ladrillo con cajones de mampostería y tapial.","Resources":[]}},"pHistorico_smvList":{"pHistorico_smv":["Edad Moderna","Edad Moderna"]},"bibliografiaList":{"bibliografia":{"editorial":null,"a_o":null,"isbn_issn":null,"tipo":14,"volumen":null,"lugar":null,"fec_pub":1975,"titulo":"El yacimiento de la Edad del Bronce de Cuesta del Negro: Purullena, Granada","titulo_bib":null,"pag_pub":"-","tit":12048,"autor":"PAREJA LÓPEZ, Enrique; MOLINA GONZÁLEZ, Fernando Ricardo"}},"id":9232,"provincia_smvList":{"provincia_smv":"Granada"},"denominacionList":{"denominacion":[{"denominacion":"Iglesia Parroquial de la Encarnación"},{"denominacion":"Iglesia de la Encarnación del Hijo de Dios y Anunciación de Nuestra Señora"}]},"provincia_s":"Granada","busqueda_denominacionList":{"busqueda_denominacion":["Iglesia de la Encarnación","Iglesia Parroquial de la Encarnación","Iglesia de la Encarnación del Hijo de Dios y Anunciación de Nuestra Señora"]},"codigo":"01180030001","municipio_s":"Albolote","municipio":{"schema:name":"Albolote","foaf:name":"Albolote","@id":"http://es.dbpedia.org/resource/Albolote","@type":"schema:City"},"caracterizacion":"Arquitectónica","busqueda_genericaList":{"busqueda_generica":["Vico , Ambrosio de","01180030001","Iglesia de la Encarnación","Iglesia Parroquial de la Encarnación","Iglesia de la Encarnación del Hijo de Dios y Anunciación de Nuestra Señora","Albolote","Albolote","Monumento","Granada","Granada","Renacimiento (Estilo)","Mudéjar",null,null,"Iglesias parroquiales","Iglesias parroquiales","Ceremonia cristiana","Ceremonia cristiana","Edad Moderna","Edad Moderna"]},"tipologia_smvList":{"tipologia_smv":["Iglesias parroquiales","Iglesias parroquiales"]},"imagenList":{"imagen":{"fec_ejecucion":null,"fecha":22115,"last_updated":"2009-07-01 20:29:51.0","tipo_im_tipo_im_id":2,"id_img":"4648304c-8b1d-4f8c-b0ec-e649f96042f4","titulo":"Vista general del inmueble","nombre_ins":"Instituto Andaluz del Patrimonio Histórico","id_pi":9232,"autor_doc":null,"referencia":"4648304c-8b1d-4f8c-b0ec-e649f96042f4"}},"denominacion":"Iglesia de la Encarnación","tipo_contenido":"inmueble","_version_":1877728493918224400,"municipio_smvList":{"municipio_smv":"Albolote"},"agenteList":{"agente":{"actuacion":"Intervino en la ejecución de la trazas en 1587","tipo":1,"fec_actuacion_cod":null,"tipo_agen":{"@id":"iaph:e-Arquitectos","rdfs:label":"Arquitectos","prov:wasAssociatedWith":[{"@id":"http://es.dbpedia.org/resource/Arquitecto"},{"@id":"http://datos.bne.es/resource/XX529468"}],"@type":"iaph:Agentes"},"fec_actuacion":null,"nombre_age":"Vico , Ambrosio de","tipo_agen_cod":"2.10.73.182.7473"}},"longitud_s":37.2308935549,"fotoList":{"foto":{"denominacion":"Iglesia de la Encarnación","municipio":{"schema:name":"Albolote","foaf:name":"Albolote","@id":"http://es.dbpedia.org/resource/Albolote","@type":"schema:City"},"id":9232,"provincia":{"schema:name":"Granada","foaf:name":"Granada","@id":"http://es.dbpedia.org/resource/Granada","@type":"schema:State"}}},"context":{"prov":"http://www.w3.org/ns/prov-o/","schema":"http://www.w3.org/ns/prov-o/","dbo":"http://dbpedia.org/ontology/","esdbpp":"http://es.dbpedia.org/property/","esdbpr":"http://es.dbpedia.org/resource/","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","rdfs":"http://www.w3.org/2000/01/rdf-schema#","foaf":"http://xmlns.com/foaf/0.1/","iaph":"https://www.iaph.es/tesauro#"}}
+{
+    "codigos_iaph": 180030001,
+    "latitud_s": -3.65729999675,
+    "tipologiaList": {
+        "tipologia": [
+            {
+                "crono_fin": null,
+                "den_etnia": null,
+                "den_tipologia": {
+                    "@id": "iaph:e-Iglesias_parroquiales",
+                    "rdfs:label": "Iglesias parroquiales",
+                    "prov:wasAssociatedWith": [
+                        {
+                            "@id": ""
+                        },
+                        {
+                            "@id": ""
+                        }
+                    ],
+                    "@type": "iaph:Objetos_inmuebles"
+                },
+                "denom_acti": {
+                    "@id": "iaph:e-Ceremonia_cristiana",
+                    "rdfs:label": "Ceremonia cristiana",
+                    "prov:wasAssociatedWith": [
+                        {
+                            "@id": ""
+                        },
+                        {
+                            "@id": ""
+                        }
+                    ],
+                    "@type": "iaph:Actividad"
+                },
+                "crono_ini": 1587,
+                "periodos_cod": "9.2659.2692",
+                "crono_ini_cod": null,
+                "den_etnia_cod": null,
+                "crono_fin_cod": null,
+                "periodos": {
+                    "@id": "iaph:e-Edad_Moderna",
+                    "rdfs:label": "Edad Moderna",
+                    "prov:wasAssociatedWith": [
+                        {
+                            "@id": "http://es.dbpedia.org/resource/Edad_Moderna"
+                        },
+                        {
+                            "@id": ""
+                        }
+                    ],
+                    "@type": "iaph:Periodos_historicos"
+                },
+                "denom_acti_cod": "1.3114.3122.3154.3162",
+                "den_estilo_cod": 4.5498,
+                "den_estilo": {
+                    "@id": "iaph:e-Renacimiento_Estilo",
+                    "rdfs:label": "Renacimiento (Estilo)",
+                    "prov:wasAssociatedWith": [
+                        {
+                            "@id": "http://es.dbpedia.org/resource/Estilo_renacentista"
+                        },
+                        {
+                            "@id": ""
+                        }
+                    ],
+                    "@type": "iaph:Estilo"
+                },
+                "den_tipologia_cod": "7.492.494.497.509.516.970.14459"
+            },
+            {
+                "crono_fin": null,
+                "den_etnia": null,
+                "den_tipologia": {
+                    "@id": "iaph:e-Iglesias_parroquiales",
+                    "rdfs:label": "Iglesias parroquiales",
+                    "prov:wasAssociatedWith": [
+                        {
+                            "@id": ""
+                        },
+                        {
+                            "@id": ""
+                        }
+                    ],
+                    "@type": "iaph:Objetos_inmuebles"
+                },
+                "denom_acti": {
+                    "@id": "iaph:e-Ceremonia_cristiana",
+                    "rdfs:label": "Ceremonia cristiana",
+                    "prov:wasAssociatedWith": [
+                        {
+                            "@id": ""
+                        },
+                        {
+                            "@id": ""
+                        }
+                    ],
+                    "@type": "iaph:Actividad"
+                },
+                "crono_ini": null,
+                "periodos_cod": "9.2659.2692",
+                "den_etnia_cod": null,
+                "crono_fin_cod": null,
+                "periodos": {
+                    "@id": "iaph:e-Edad_Moderna",
+                    "rdfs:label": "Edad Moderna",
+                    "prov:wasAssociatedWith": [
+                        {
+                            "@id": "http://es.dbpedia.org/resource/Edad_Moderna"
+                        },
+                        {
+                            "@id": ""
+                        }
+                    ],
+                    "@type": "iaph:Periodos_historicos"
+                },
+                "denom_acti_cod": "1.3114.3122.3154.3162",
+                "den_estilo_cod": "4.5472.5473",
+                "den_estilo": {
+                    "@id": "iaph:e-Mudéjar",
+                    "rdfs:label": "Mudéjar",
+                    "prov:wasAssociatedWith": [
+                        {
+                            "@id": "http://es.dbpedia.org/resource/Arte_mudéjar"
+                        },
+                        {
+                            "@id": ""
+                        }
+                    ],
+                    "@type": "iaph:Estilo"
+                },
+                "den_tipologia_cod": "7.492.494.497.509.516.970.14459"
+            }
+        ]
+    },
+    "proteccion_s": "SI",
+    "provincia": {
+        "schema:name": "Granada",
+        "foaf:name": "Granada",
+        "@id": "http://es.dbpedia.org/resource/Granada",
+        "@type": "schema:State"
+    },
+    "proteccionList": {
+        "proteccion": {
+            "pagina": null,
+            "fecha": "07/12/1981",
+            "estado": "Inscrito",
+            "numero": null,
+            "figura": "BIC",
+            "den_publica": "BOE",
+            "tipologia": "Monumento"
+        }
+    },
+    "identifica": {
+        "descripcion": {
+            "@text": "La iglesia de planta rectangular, consta de tres naves con crucero separadas por pilares cruciformes que sostienen arcos de medio punto. Se cubre la nave central con artesonado de tirantes y racimos dorados. El techo de la capilla mayor es un artesonado mudéjar con rica lacería. Las naves o capillas laterales tienen bóveda de crucería.\nLa torre situada a los pies de la iglesia es de dos cuerpos y campanario separados por pequeñas cornisas. Sufrió grandes desperfectos en el terremoto del 56. Los muros de la iglesia son de fábrica de ladrillo con cajones de mampostería y tapial.",
+            "Resources": []
+        },
+        "tipo": "i",
+        "codigo": "01180030001",
+        "estado": "Aceptada",
+        "raac": null,
+        "municipio": {
+            "schema:name": "Albolote",
+            "foaf:name": "Albolote",
+            "@id": "http://es.dbpedia.org/resource/Albolote",
+            "@type": "schema:City"
+        },
+        "caracterizacion": "Arquitectónica",
+        "codigosipha": 180030001,
+        "provincia": {
+            "schema:name": "Granada",
+            "foaf:name": "Granada",
+            "@id": "http://es.dbpedia.org/resource/Granada",
+            "@type": "schema:State"
+        },
+        "dat_historico": "Para su construcción se demolió la antigua iglesia existente en el año 1580. Ambrosio de Vico intervino en 1587 en la ejecución de las trazas de la iglesia que habría de ser de cantería de piedra del Cuibillas.",
+        "pi_pi_id": null,
+        "denominacion": "Iglesia de la Encarnación",
+        "dir_postal": null,
+        "id": 9232,
+        "otr_denom": "Otra"
+    },
+    "clob": {
+        "descripcion": {
+            "@text": "La iglesia de planta rectangular, consta de tres naves con crucero separadas por pilares cruciformes que sostienen arcos de medio punto. Se cubre la nave central con artesonado de tirantes y racimos dorados. El techo de la capilla mayor es un artesonado mudéjar con rica lacería. Las naves o capillas laterales tienen bóveda de crucería.\nLa torre situada a los pies de la iglesia es de dos cuerpos y campanario separados por pequeñas cornisas. Sufrió grandes desperfectos en el terremoto del 56. Los muros de la iglesia son de fábrica de ladrillo con cajones de mampostería y tapial.",
+            "Resources": []
+        }
+    },
+    "pHistorico_smvList": {
+        "pHistorico_smv": [
+            "Edad Moderna",
+            "Edad Moderna"
+        ]
+    },
+    "bibliografiaList": {
+        "bibliografia": {
+            "editorial": null,
+            "a_o": null,
+            "isbn_issn": null,
+            "tipo": 14,
+            "volumen": null,
+            "lugar": null,
+            "fec_pub": 1975,
+            "titulo": "El yacimiento de la Edad del Bronce de Cuesta del Negro: Purullena, Granada",
+            "titulo_bib": null,
+            "pag_pub": "-",
+            "tit": 12048,
+            "autor": "PAREJA LÓPEZ, Enrique; MOLINA GONZÁLEZ, Fernando Ricardo"
+        }
+    },
+    "id": 9232,
+    "provincia_smvList": {
+        "provincia_smv": "Granada"
+    },
+    "denominacionList": {
+        "denominacion": [
+            {
+                "denominacion": "Iglesia Parroquial de la Encarnación"
+            },
+            {
+                "denominacion": "Iglesia de la Encarnación del Hijo de Dios y Anunciación de Nuestra Señora"
+            }
+        ]
+    },
+    "provincia_s": "Granada",
+    "busqueda_denominacionList": {
+        "busqueda_denominacion": [
+            "Iglesia de la Encarnación",
+            "Iglesia Parroquial de la Encarnación",
+            "Iglesia de la Encarnación del Hijo de Dios y Anunciación de Nuestra Señora"
+        ]
+    },
+    "codigo": "01180030001",
+    "municipio_s": "Albolote",
+    "municipio": {
+        "schema:name": "Albolote",
+        "foaf:name": "Albolote",
+        "@id": "http://es.dbpedia.org/resource/Albolote",
+        "@type": "schema:City"
+    },
+    "caracterizacion": "Arquitectónica",
+    "busqueda_genericaList": {
+        "busqueda_generica": [
+            "Vico , Ambrosio de",
+            "01180030001",
+            "Iglesia de la Encarnación",
+            "Iglesia Parroquial de la Encarnación",
+            "Iglesia de la Encarnación del Hijo de Dios y Anunciación de Nuestra Señora",
+            "Albolote",
+            "Albolote",
+            "Monumento",
+            "Granada",
+            "Granada",
+            "Renacimiento (Estilo)",
+            "Mudéjar",
+            null,
+            null,
+            "Iglesias parroquiales",
+            "Iglesias parroquiales",
+            "Ceremonia cristiana",
+            "Ceremonia cristiana",
+            "Edad Moderna",
+            "Edad Moderna"
+        ]
+    },
+    "tipologia_smvList": {
+        "tipologia_smv": [
+            "Iglesias parroquiales",
+            "Iglesias parroquiales"
+        ]
+    },
+    "imagenList": {
+        "imagen": {
+            "fec_ejecucion": null,
+            "fecha": 22115,
+            "last_updated": "2009-07-01 20:29:51.0",
+            "tipo_im_tipo_im_id": 2,
+            "id_img": "4648304c-8b1d-4f8c-b0ec-e649f96042f4",
+            "titulo": "Vista general del inmueble",
+            "nombre_ins": "Instituto Andaluz del Patrimonio Histórico",
+            "id_pi": 9232,
+            "autor_doc": null,
+            "referencia": "4648304c-8b1d-4f8c-b0ec-e649f96042f4"
+        }
+    },
+    "denominacion": "Iglesia de la Encarnación",
+    "tipo_contenido": "inmueble",
+    "_version_": 1877728493918224400,
+    "municipio_smvList": {
+        "municipio_smv": "Albolote"
+    },
+    "agenteList": {
+        "agente": {
+            "actuacion": "Intervino en la ejecución de la trazas en 1587",
+            "tipo": 1,
+            "fec_actuacion_cod": null,
+            "tipo_agen": {
+                "@id": "iaph:e-Arquitectos",
+                "rdfs:label": "Arquitectos",
+                "prov:wasAssociatedWith": [
+                    {
+                        "@id": "http://es.dbpedia.org/resource/Arquitecto"
+                    },
+                    {
+                        "@id": "http://datos.bne.es/resource/XX529468"
+                    }
+                ],
+                "@type": "iaph:Agentes"
+            },
+            "fec_actuacion": null,
+            "nombre_age": "Vico , Ambrosio de",
+            "tipo_agen_cod": "2.10.73.182.7473"
+        }
+    },
+    "longitud_s": 37.2308935549,
+    "fotoList": {
+        "foto": {
+            "denominacion": "Iglesia de la Encarnación",
+            "municipio": {
+                "schema:name": "Albolote",
+                "foaf:name": "Albolote",
+                "@id": "http://es.dbpedia.org/resource/Albolote",
+                "@type": "schema:City"
+            },
+            "id": 9232,
+            "provincia": {
+                "schema:name": "Granada",
+                "foaf:name": "Granada",
+                "@id": "http://es.dbpedia.org/resource/Granada",
+                "@type": "schema:State"
+            }
+        }
+    },
+    "context": {
+        "prov": "http://www.w3.org/ns/prov-o/",
+        "schema": "http://www.w3.org/ns/prov-o/",
+        "dbo": "http://dbpedia.org/ontology/",
+        "esdbpp": "http://es.dbpedia.org/property/",
+        "esdbpr": "http://es.dbpedia.org/resource/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "iaph": "https://www.iaph.es/tesauro#"
+    }
+}

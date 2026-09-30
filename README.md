@@ -43,9 +43,17 @@ Además de por cada bien patrimonial, tenemos dentro de su página personalizada
 
 [ficha-inmueble-9232.jsonld](docs/ficha-inmueble-9232.jsonld) 
 
-Para poder acceder a estos datos abiertos, sería necesario entrar en la URL específica de cada bien patrimonial, esto lo he conseguido buscando en las herramientas del desarrollador, dentro de Network y escribiendo dentro de Filter el id del bien que quieras encontrar y pulsando en Headers encuentras la URL pertinente, por ejemplo: [URL de la ficha en JSON](https://guiadigital.iaph.es/api/1.0/bien/inmueble/enriquecido/9232) , como vemos cambiando el último número (id), ya que cada uno hace referencia a uno concreto, se podría obtener la información de cualquier bien del listado. 
-
 Aquí dentro podemos extraer las coordenadas, la protección, el periodo y la descripción.
+
+Para poder acceder a estos datos abiertos, sería necesario entrar en la URL específica de cada bien patrimonial, que se ubica un botón justo en la esquina derecha llamado Descargar datos abiertos, esto lo he conseguido buscando en las herramientas del desarrollador, dentro de Network y escribiendo dentro de Filter el id del bien que quieras encontrar y pulsando en Headers encuentras la URL pertinente, por ejemplo: `https://guiadigital.iaph.es/api/1.0/bien/inmueble/enriquecido/9232` , como vemos el último número (id), es el que hacer referencia a uno concreto, pero al abrirla directamente da error,  porque la API exige un token de acceso. La web de la ficha llama a esa URL enviando un token; por eso en las herramientas de desarrollador la petición funciona, pero si abres la URL tú solo, sin token, da error. Apareciendo el siguiente mensaje: 
+
+```
+<ams:fault xmlns:ams="http://wso2.org/apimanager/security">
+<ams:code>900902</ams:code>
+<ams:message>Missing Credentials</ams:message>
+<ams:description>Required OAuth credentials not provided. Make sure your API invocation call has a header: "Authorization: Bearer ACCESS_TOKEN"</ams:description>
+</ams:fault>
+```
 
 En limitaciones encontramos en primer lugar con que en el IAPH no hay información sobre el estado de conservación de cada bien, tampoco contempla horarios y tiene dos fallos de calidad: Latitud y longitud están intercambiadas. En la iglesia de la Encarnación de Albolote la marca en "latitud_s": -3.657 y "longitud_s": 37.23, y en cambio Albolote está en latitud 37.23 y longitud -3.66. Como vemos estos valores están puestos al revés. Cuando vayamos a usar las coordenadas tenemos que tener esto en cuenta. El segundo fallo de calidad que he encontrado es que la bibliografía a veces no corresponde ya que en este ejemplo aparece un libro sobre un yacimiento de la Edad del Bronce en Purullena, que no tiene nada que ver con esta iglesia. 
 También descubrí otra limitación dentro de esta página, esta es que muchos registros dentro de Granada y provincia no cuentan con su municipio ni provincia, por lo que va a haber que identificarlos por el principio del código de los bienes de Granada (0118). 
