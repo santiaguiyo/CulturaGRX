@@ -69,11 +69,12 @@ Dentro de las limitaciones he podido observar que solo hay horarios para algunos
 ### Qué pide el usuario
 El usuario le pide al programa un número de días, un horario establecido en la que el usuario pone a qué horas puede/quiere visitar, cuántas visitas quiere como máximo, cuál es su interés y la zona.
 
-### Subproblema 1: decidir qué sitios encajan con el interés
-El programa coge los datos de Granada del listado del IAPH, coge solo los sitios que empiezan por 0118, y de los museos coge la información del JSON, solo los de Granada también. Dependiendo de cada interés, el programa mira el periodo y su estilo de la ficha de cada bien y se queda con los que corresponde a dicha época. Para los museos, tendría que mirar dentro de la descripción. 
+### Subproblema 1: calcular cuánto encaja cada sitio con el interés
+Este paso prepara los datos para los siguientes; el núcleo de la lógica está en los subproblemas 2, 3 y 5.
+El programa coge los datos de Granada del listado del IAPH, coge solo los sitios que empiezan por 0118, y de los museos coge la información del JSON, solo los de Granada también. Dependiendo de cada interés, el programa mira el periodo y el estilo de la ficha de cada bien y le asigna una puntuación según cuánto coincide con el interés. 
 Para las etiquetas dentro de la guía digital del IAPH, buscamos por ejemplo Bañuelo y en sus etiquetas periodo y estilo aparece: 
 Edad Media - Árabes y Arte islámico respectivamente y en json.ld son los campos periodos y den_estilo, que son los que usaremos. 
-Las palabras que buscamos en la descripción de los museos para ver si encaja son términos como nazarí, andalusí, islámico. 
+En los museos, el programa detecta en la descripción términos como nazarí, andalusí o islámico, y según eso les asigna una puntuación.
 Estas fichas se descargan en .jsonld desde la Guía Digital.
 
 ### Subproblema 2: convertir los horarios a un formato común
@@ -88,7 +89,7 @@ Un sitio solo se coloca un día si está abierto ese día, según la temporada d
 Esto hace referencia para los que están marcados como "horario desconocido", van a estar marcados en cualquier día como "visitables desde fuera" y solo entrarán si sobra hueco después de los que tienen horario, avisando además al usuario de que no tiene horario oficial establecido.
 
 ### Subproblema 5: qué hacer si no cabe todo
-Si no entra todo en los días disponibles, establecer un criterio de decisión. Vamos a usar el criterio de decisión usando los siguientes parámetros: coincide en periodo y estilo, luego solo en uno, y después los museos que lo mencionan en la descripción. 
+Si no entra todo en los días disponibles, se usa la puntuación calculada en el subproblema 1: primero los que coinciden en periodo y estilo, luego los que solo coinciden en uno, y después los museos que lo mencionan en la descripción.
 
 ### Cómo se comprueba que es correcto
 Para comprobar que el plan es correcto, podemos verificar que ningún día pasa del máximo, todo encaja con el interés, no se repite nada y tanto museos como monumentos aparecen los días que abren.
