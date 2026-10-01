@@ -4,9 +4,9 @@
 
 Este problema lo tienen muchos ciudadanos de la ciudad de Granada, al igual que muchos turistas que vienen a visitar la ciudad y provincia. Cuando quieren, en su tiempo libre, vacaciones o fines de semana, o en el caso de los turistas en su visita, no pueden ni saben descubrir ni visitar muchísimos espacios culturales y patrimoniales, ya que la información de la que disponemos de su existencia es prácticamente nula. Además, tampoco saben sus horarios de visita, la historia que tienen detrás esos espacios, etc.
 
-También tienen la necesidad de organizar las visitas cuando se tiene poco tiempo y unos intereses concretos, según los horarios.
+Por otro lado, cuando se tienen pocos días y unos intereses concretos, como el arte islámico, no saben qué sitios pueden ver ni cuándo, porque cada uno tiene un horario distinto que además cambia según la temporada. Por eso acaban encontrándose sitios cerrados o perdiéndose los que más les interesan.
 
-Es un problema porque muchos de estos edificios se encuentran sin visitas ya que muchas personas no asisten porque no saben ni de su existencia. Además, el trabajo y esfuerzo de muchas personas se ve gravemente afectado e incluso en peligro.
+Es un problema porque muchos de estos espacios reciben pocas visitas, ya que muchas personas no saben ni de su existencia.
 
 ## Fuentes de datos
 
@@ -67,7 +67,7 @@ Dentro de las limitaciones he podido observar que solo hay horarios para algunos
 ## Lógica de negocio
 
 ### Qué pide el usuario
-El usuario le pide al programa un número de días, un horario establecido en la que el usuario pone a qué horas puede/quiere visitar, cuántas visitas quiere como máximo, cuál es su interés y la zona.
+El usuario le pide al programa un número de días, un horario establecido en la que el usuario pone a qué horas puede/quiere visitar, cuántas visitas quiere como máximo, cuál es su interés y la zona, indicada por municipios (por ejemplo, Granada capital o un municipio concreto de la provincia).
 
 ### Subproblema 1: calcular cuánto encaja cada sitio con el interés
 Este paso prepara los datos para los siguientes; el núcleo de la lógica está en los subproblemas 2, 3 y 5.
