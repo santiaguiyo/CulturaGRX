@@ -14,29 +14,6 @@ El problema necesita información sobre los diferentes bienes culturales y patri
 
 La primera que voy a usar es esta fuente de datos para el proyecto, el primero es de la web de la Junta de Andalucía y su Instituto Andaluz de Patrimonio Histórico, esta fuente la voy a utilizar para la parte de qué espacios existen y dónde están,  en el cual dentro de esta web: [portal de datos abiertos de la Junta](https://www.juntadeandalucia.es/datosabiertos/portal/dataset/patrimonio-inmueble-de-andalucia) nos encontramos con una API con formato XML, CSV y JSON para aportar id, codigo, denominacion, provincia, municipio y caracterizacion. En un ejemplo de la API (json): [API en formato JSON](https://www.juntadeandalucia.es/datosabiertos/portal/iaph/dataset/bien/inmueble?page=0&rows=31000&format=json)
 
-```json
- {
-        "id":"347310",
-        "codigo":"01180020009",
-        "denominacion":"El Hacho",
-        "caracterizacion":"Arqueológica"},
-      {
-        "caracterizacion":"Arquitectónica",
-        "codigo":"01180030001",
-        "denominacion":"Iglesia de la Encarnación",
-        "id":"9232",
-        "municipio":"Albolote",
-        "provincia":"Granada"},
-      {
-        "caracterizacion":"Arquitectónica, Etnológica",
-        "codigo":"01180030003",
-        "denominacion":"Toro Osborne XI",
-        "id":"499",
-        "municipio":"Albolote",
-        "provincia":"Granada"},
-
-```
-
 Aquí podemos extraer los datos que he comentado antes, su identificación, su código (que como podemos observar todos los de Granada empiezan por 0118), denominación, el municipio y la caracterización.
 
 Además de por cada bien patrimonial, tenemos dentro de su página personalizada por ejemplo de la iglesia de la Encarnación de Albolote, con la siguiente URL:  [ficha de la Iglesia de la Encarnación](https://guiadigital.iaph.es/bien/inmueble/9232/granada/albolote/iglesia-de-la-encarnacion) dentro de la misma podemos descargar arriba a la derecha los datos abierto de cada uno con (.jsonld), por ejemplo:
@@ -55,6 +32,8 @@ Para poder acceder a estos datos abiertos, sería necesario entrar en la URL esp
 </ams:fault>
 ```
 
+Por lo cual usaremos las fichas descargando el .jsonld desde la web.
+
 En limitaciones encontramos en primer lugar con que en el IAPH no hay información sobre el estado de conservación de cada bien, tampoco contempla horarios y tiene dos fallos de calidad: Latitud y longitud están intercambiadas. En la iglesia de la Encarnación de Albolote la marca en "latitud_s": -3.657 y "longitud_s": 37.23, y en cambio Albolote está en latitud 37.23 y longitud -3.66. Como vemos estos valores están puestos al revés. Cuando vayamos a usar las coordenadas tenemos que tener esto en cuenta. El segundo fallo de calidad que he encontrado es que la bibliografía a veces no corresponde ya que en este ejemplo aparece un libro sobre un yacimiento de la Edad del Bronce en Purullena, que no tiene nada que ver con esta iglesia. 
 También descubrí otra limitación dentro de esta página, esta es que muchos registros dentro de Granada y provincia no cuentan con su municipio ni provincia, por lo que va a haber que identificarlos por el principio del código de los bienes de Granada (0118). 
 
@@ -64,28 +43,6 @@ Un ejemplo de extracción de datos con un museo sería el siguiente:
 
 [museo-ejemplo.json](docs/museo-ejemplo.json) 
 
-```json
-{
-    "id": 2702,
-    "name": "Parque de las Ciencias",
-    "location": "Granada",
-    "postcode": 18006,
-    "latitude": "37,15949",
-    "municipality": "Granada",
-    "observations": "El Parque de las Ciencias tiene por objetivo promover el inter\u00e9s por la cultura cient\u00edfica. Dispone de salas expositivas, donde se facilita la comprensi\u00f3n de fen\u00f3menos cient\u00edficos, tecnol\u00f3gicos, medioambientales y en particular sobre f\u00edsica, astronom\u00eda, percepci\u00f3n, etc., a trav\u00e9s de la manipulaci\u00f3n de diferentes m\u00f3dulos bajo el principio de la interactividad. El centro cuenta con \u00e1reas exteriores ajardinadas provistas de contenido expositivo. En ellas, se puede disfrutar de recorridos bot\u00e1nicos, m\u00e1quinas e ingenios, laberinto vegetal, mariposarium, almazara, paseo de los pavimentos, etc. El edificio est\u00e1 integrado por dos grandes alas unidas por un hall de cristal y est\u00e1 dotado con servicio de cafeter\u00eda, tienda, planetario, observatorio astron\u00f3mico, planetario infantil, sala Explora para ni\u00f1os de 3 a 7 a\u00f1os y sala dedicada a exposiciones temporales.",
-    "address": "Avenida Avenida de la Ciencia s/n, Consorcio Parque de las Ciencias, 18006 Granada",
-    "opening_hours": "Martes a s\u00e1bado de 10:00 a 19:00. domingos y festivos de 10:00 a 15:00. de Martes a S\u00e1bado de 10:00 a 19:00. Domingo y festivos de 10:00 a 15:00.",
-    "web": "http://www.parqueciencias.com",
-    "province": "Granada",
-    "longitude": "-3,609117",
-    "unit_type": "Museo",
-    "state": "ABI",
-    "phone": "958 13 19 00",
-    "fax": "958 13 35 82",
-    "email": "info@parqueciencias.com"
-}
-
-```
 
 Los campos que voy a usar aquí son sobre todo los horarios, días festivos abiertos u obviamente la localización de cada uno.
 
@@ -93,6 +50,51 @@ Como he podido observar, en el apartado del esfuerzo necesario para extraer los 
 Además también las coordenadas tanto en longitud como en latitud aparecen con coma decimal, así que también habrá que reconvertirlas a número. 
 
 Una de las limitaciones que encuentro es que los horarios y días de apertura solamente están para los 88 museos disponibles en la provincia de Granada, cosas que para los bienes culturales no, también es verdad que algunos de ellos no tienen horarios porque no están abiertos al público, solamente se pueden visitar desde fuera.
+
+La tercera fuente que voy a usar para poder cumplimentar los horarios de visitas y sus respectivos días es añadir dos fuentes más con horarios de monumentos, para cubrir lo que no tienen ni el IAPH ni los museos.
+
+  - [horarios del Patronato de la Alhambra](https://www.alhambra-patronato.es/visitar/horarios-y-tarifas)
+  - [horario de visitas del Ayuntamiento de Granada](https://www.granada.org/inet/wagenda.nsf/byhac2/1D2DB77D7C9C7F8CC1258833003BED3D)
+
+La primera fuente contiene los monumentos del Patronato, el conjunto de la Alhambra y los monumentos andalusíes (Corral del Carbón, Bañuelo, Casa Horno de Oro, Palacio de Dar al-Horra). 
+La segunda fuente que es la del Ayuntamiento, el Carmen de los Mártires, el Palacio de los Córdova y Quinta Alegre. 
+
+Las fuentes no proveen como las anteriores de datos abiertos, sino que son páginas web, así que tendré que leer el HTML y de ahí sacar la información, además los horarios vienen por temporadas (con rango de fechas). El programa tiene que mirar en qué fecha cae cada día del plan para saber qué horario aplicar, ya que en la página aparecen horarios distintos para cada temporada del año.
+
+Dentro de las limitaciones he podido observar que solo hay horarios para algunos monumentos, la mayoría de la capital y casi nada de la provincia.
+
+
+## Lógica de negocio
+
+### Qué pide el usuario
+El usuario le pide al programa un número de días, un horario establecido en la que el usuario pone a qué horas puede/quiere visitar, cuántas visitas quiere como máximo, cuál es su interés y la zona.
+
+### Subproblema 1: decidir qué sitios encajan con el interés
+El programa coge los datos de Granada del listado del IAPH, coge solo los sitios que empiezan por 0118, y de los museos coge la información del JSON, solo los de Granada también. Dependiendo de cada interés, el programa mira el periodo y su estilo de la ficha de cada bien y se queda con los que corresponde a dicha época. Para los museos, tendría que mirar dentro de la descripción. 
+Para las etiquetas dentro de la guía digital del IAPH, buscamos por ejemplo Bañuelo y en sus etiquetas periodo y estilo aparece: 
+Edad Media - Árabes y Arte islámico respectivamente y en json.ld son los campos periodos y den_estilo, que son los que usaremos. 
+Las palabras que buscamos en la descripción de los museos para ver si encaja son términos como nazarí, andalusí, islámico. 
+Estas fichas se descargan en .jsonld desde la Guía Digital.
+
+### Subproblema 2: convertir los horarios a un formato común
+Para poder descubrir cuándo visitar cada sitio, en los museos y los monumentos que tengan, se interpreta el texto para poder saber qué días abren y su horario. Los que no contemplen horario, se marcarán como horario desconocido. 
+Los horarios vienen de tres formas distintas: texto libre en los museos, HTML por temporadas en el Patronato y el Ayuntamiento, y nada en la mayoría de los bienes. El programa los convierte todos a lo mismo: para cada sitio y cada día, si abre y de qué hora a qué hora, o en su caso desconocido si no tiene o no contempla este horario. Por ejemplo si pone que abre de martes a sábado de 10:00 a 19:00. Domingos y festivos de 10:00 a 15:00 -> da lunes cerrado, y abierto de martes a sábado de 10:00 a 19:00, y domingo de 10:00 a 15:00.
+
+### Subproblema 3: construir el plan
+Para repartir los días se colocan los sitios en los días que tiene el usuario, sin pasarse del máximo de visitas por día, sin repetirlos y poniendo los museos que estén abiertos. Se colocan solo cuando están abiertos dentro del rango horario del usuario.
+Un sitio solo se coloca un día si está abierto ese día, según la temporada de esa fecha, y dentro de las horas que el usuario ha dicho. Esto vale para museos y monumentos.
+
+### Subproblema 4: sitios sin horario
+Esto hace referencia para los que están marcados como "horario desconocido", van a estar marcados en cualquier día como "visitables desde fuera" y solo entrarán si sobra hueco después de los que tienen horario, avisando además al usuario de que no tiene horario oficial establecido.
+
+### Subproblema 5: qué hacer si no cabe todo
+Si no entra todo en los días disponibles, establecer un criterio de decisión. Vamos a usar el criterio de decisión usando los siguientes parámetros: coincide en periodo y estilo, luego solo en uno, y después los museos que lo mencionan en la descripción. 
+
+### Cómo se comprueba que es correcto
+Para comprobar que el plan es correcto, podemos verificar que ningún día pasa del máximo, todo encaja con el interés, no se repite nada y tanto museos como monumentos aparecen los días que abren.
+Además de comprobar que ningún sitio está fuera de las horas del usuario, que el horario de ejemplo se convierte bien y que los sitios sin horario siguen la regla del subproblema 4.
+
+
 
 
 ## Juego de rol
