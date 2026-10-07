@@ -1,7 +1,5 @@
 # User journeys
 
-Estas jornadas describen el uso de CulturaGRX una vez desarrollado. Parte de lo que aparece corresponde a milestones posteriores al inicial.
-
 ## Paula prepara su visita de 3 días
 
 Paula viene a Granada una sola vez, tres días. Unos días antes, en casa y con el portátil, quiere decidir qué va a ver. Hasta ahora entraba en la página de cada sitio para mirar el horario, cada web lo ponía de una manera distinta y más de una vez ha llegado a un sitio cerrado porque el horario que había apuntado era el de otra temporada.
