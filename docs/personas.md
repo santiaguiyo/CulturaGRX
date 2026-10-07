@@ -5,4 +5,4 @@ Tiene 22 años y viene de Barcelona a pasar 3 días en Granada. Le interesa el a
 
 ## Simón, vecino de Granada
 Tiene 52 años, vive en el Albaicín y trabaja entre semana. Le interesa conocer los espacios de arte islámico de la ciudad y de los pueblos cercanos que nunca ha visitado. Su trabajo solamente le permite algunos fines de semana sueltos, solo por las mañanas.
-El problema con el que se encuetra es qeu hay más sitios de los que le caben en esos días y no sabe cuáles elegir ni cómo repartirlos. 
+El problema con el que se encuetra es que hay más sitios de los que le caben en esos días y no sabe cuáles elegir ni cómo repartirlos. 
