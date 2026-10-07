@@ -107,3 +107,5 @@ Además de comprobar que ningún sitio está fuera de las horas del usuario, que
 - [Configuración del entorno](docs/configuracion.md)
 - [Personas](docs/personas.md)
 - [User journeys](docs/user-journeys.md)
+- [Historias de usuario](docs/historias-de-usuario.md)
+- [Milestones](docs/milestones.md)

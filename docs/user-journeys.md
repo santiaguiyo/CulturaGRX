@@ -1,8 +1,19 @@
 # User journeys
 
+Estas jornadas describen el uso de CulturaGRX una vez desarrollado. Parte de lo que aparece corresponde a milestones posteriores al inicial.
+
 ## Paula prepara su visita de 3 días
-1. Antes de viajar, Laura decide que quiere ver monumentos de arte islámico.
-2. Busca información y encuentra muchos sitios, pero cada web da el horario de una forma distinta: unas por temporadas, otras en un texto largo y otras no lo dan.
-3. Intenta apuntarlos a mano en una libreta, pero no tiene claro qué días abre cada uno.
-4. El segundo día va al Bañuelo y se lo encuentra cerrado, porque no se había fijado en el horario de esa temporada.
-5. Al final se va de Granada sin ver dos de los sitios que más le interesaban.
+
+Paula viene a Granada una sola vez, tres días. Unos días antes, en casa y con el portátil, quiere decidir qué va a ver. Hasta ahora entraba en la página de cada sitio para mirar el horario, cada web lo ponía de una manera distinta y más de una vez ha llegado a un sitio cerrado porque el horario que había apuntado era el de otra temporada.
+
+Esta vez indica las fechas del viaje, que le interesa el arte islámico y que quiere ver como máximo dos sitios distintos al día. Recibe un plan con los sitios de cada día y la hora a la que puede entrar en cada uno.
+
+Ya en Granada lo consulta cada mañana con el móvil por la calle. Paula deja de perder tiempo mirando página por página y no se lleva la sorpresa de encontrarse algo cerrado.
+
+## Simón elige qué ver un sábado por la mañana
+
+Simón tiene libres algunos fines de semana sueltos, solo por la mañana. El mismo sábado, en casa y con el móvil antes de salir, quiere ver algún espacio de arte islámico que todavía no conozca. Siempre buscaba en internet, le salía una lista larga sin nada que pudiera hacerle saber cuáles tenían más que ver con lo que le interesa, y acababa yendo a uno que ya conocía.
+
+Ahora indica la mañana que tiene libre y lo que le interesa, y recibe un plan para esa mañana con los sitios que más encajan y que le da tiempo a ver.
+
+Simón aprovecha ese tiempo en sitios que no conocía en vez de repetir siempre los mismos.
