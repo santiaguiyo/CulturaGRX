@@ -16,8 +16,7 @@ La primera que voy a usar es esta fuente de datos para el proyecto, el primero e
 
 Aquí podemos extraer los datos que he comentado antes, su identificación, su código (que como podemos observar todos los de Granada empiezan por 0118), denominación, el municipio y la caracterización.
 
-Además de por cada bien patrimonial, tenemos dentro de su página personalizada por ejemplo de la iglesia de la Encarnación de Albolote, con la siguiente URL:  [ficha de la Iglesia de la Encarnación](https://guiadigital.iaph.es/bien/inmueble/9232/granada/albolote/iglesia-de-la-encarnacion) dentro de la misma podemos descargar arriba a la derecha los datos abiertos de cada uno en formato .jsonld.:
-
+Además de por cada bien patrimonial, tenemos dentro de su página personalizada por ejemplo de la iglesia de la Encarnación de Albolote, con la siguiente URL:  [ficha de la Iglesia de la Encarnación](https://guiadigital.iaph.es/bien/inmueble/9232/granada/albolote/iglesia-de-la-encarnacion) dentro de la misma podemos descargar arriba a la derecha los datos abiertos de cada uno en formato .jsonld.
 
 Dentro de cada ficha podemos extraer las coordenadas, la protección, el periodo y la descripción.
 
