@@ -6,7 +6,7 @@ Paula va a estar tres días en Granada y le gusta el arte islámico. El problema
 
 **Datos necesarios:** los horarios que publican el Patronato de la Alhambra y el Ayuntamiento de Granada para los monumentos, y la Junta de Andalucía para los museos. Están descritos en las [fuentes de datos](../README.md#fuentes-de-datos).
 
-**User journey:** [Paula prepara su visita de 3 días](user-journeys.md)
+**User journey:** [Paula prepara su visita de 3 días](user-journeys-culturagrx.md)
 
 ## [HU002] No sé qué visitar con poco tiempo
 
@@ -14,4 +14,4 @@ Simón vive en el Albaicín y solo tiene libres algunas mañanas de fin de seman
 
 **Datos necesarios:** el listado y las fichas del IAPH, que indican el periodo histórico y el estilo de cada sitio. Están descritos en las [fuentes de datos](../README.md#fuentes-de-datos).
 
-**User journey:** [Simón elige qué ver un sábado por la mañana](user-journeys.md)
+**User journey:** [Simón elige qué ver un sábado por la mañana](user-journeys-culturagrx.md)

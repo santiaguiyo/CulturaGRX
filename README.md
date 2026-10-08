@@ -16,11 +16,10 @@ La primera que voy a usar es esta fuente de datos para el proyecto, el primero e
 
 Aquí podemos extraer los datos que he comentado antes, su identificación, su código (que como podemos observar todos los de Granada empiezan por 0118), denominación, el municipio y la caracterización.
 
-Además de por cada bien patrimonial, tenemos dentro de su página personalizada por ejemplo de la iglesia de la Encarnación de Albolote, con la siguiente URL:  [ficha de la Iglesia de la Encarnación](https://guiadigital.iaph.es/bien/inmueble/9232/granada/albolote/iglesia-de-la-encarnacion) dentro de la misma podemos descargar arriba a la derecha los datos abierto de cada uno con (.jsonld), por ejemplo:
+Además de por cada bien patrimonial, tenemos dentro de su página personalizada por ejemplo de la iglesia de la Encarnación de Albolote, con la siguiente URL:  [ficha de la Iglesia de la Encarnación](https://guiadigital.iaph.es/bien/inmueble/9232/granada/albolote/iglesia-de-la-encarnacion) dentro de la misma podemos descargar arriba a la derecha los datos abiertos de cada uno en formato .jsonld.:
 
-[ficha-inmueble-9232.jsonld](docs/ficha-inmueble-9232.jsonld) 
 
-Aquí dentro podemos extraer las coordenadas, la protección, el periodo y la descripción.
+Dentro de cada ficha podemos extraer las coordenadas, la protección, el periodo y la descripción.
 
 Para poder acceder a estos datos abiertos, sería necesario entrar en la URL específica de cada bien patrimonial, que se ubica un botón justo en la esquina derecha llamado Descargar datos abiertos, esto lo he conseguido buscando en las herramientas del desarrollador, dentro de Network y escribiendo dentro de Filter el id del bien que quieras encontrar y pulsando en Headers encuentras la URL pertinente, por ejemplo: `https://guiadigital.iaph.es/api/1.0/bien/inmueble/enriquecido/9232` , como vemos el último número (id), es el que hacer referencia a uno concreto, pero al abrirla directamente da error,  porque la API exige un token de acceso. La web de la ficha llama a esa URL enviando un token; por eso en las herramientas de desarrollador la petición funciona, pero si abres la URL tú solo, sin token, da error. Apareciendo el siguiente mensaje: 
 
@@ -105,7 +104,7 @@ Además de comprobar que ningún sitio está fuera de las horas del usuario, que
 ## Documentación
 
 - [Configuración del entorno](docs/configuracion.md)
-- [Personas](docs/personas.md)
-- [User journeys](docs/user-journeys.md)
+- [Personas](docs/personas-culturagrx.md)
+- [User journeys](docs/user-journeys-culturagrx.md)
 - [Historias de usuario](docs/historias-de-usuario.md)
 - [Milestones](docs/milestones.md)
