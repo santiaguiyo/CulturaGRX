@@ -103,3 +103,7 @@ Además de comprobar que ningún sitio está fuera de las horas del usuario, que
 ## Documentación
 
 - [Configuración del entorno](docs/configuracion.md)
+- [Personas](docs/personas-culturagrx.md)
+- [User journeys](docs/user-journeys-culturagrx.md)
+- [Historias de usuario](docs/historias-de-usuario.md)
+- [Milestones](docs/milestones.md)
