@@ -1,15 +1,9 @@
 # Milestones
 
-Ambos hitos trabajan sobre el problema de la HU001: los horarios difíciles de entender.
+## Milestone 0: Diseño dirigido por el dominio sobre la HU001
 
-## Milestone 0: El dominio de los horarios
+Se trabaja sobre la HU001 usando como metodología el diseño dirigido por el dominio. Es válido cuando, a cada paso del trabajo, se puede ver que se ajusta a esa metodología.
 
-**Qué es:** el resultado de aplicar el diseño dirigido por el dominio al problema de la HU001, es decir, ese problema expresado en el lenguaje elegido.
+## Milestone 1: Tests y lógica de negocio de la HU001
 
-**Requisito técnico:** cada elemento de este hito comprueba, al crearse, que sus valores tienen sentido en el problema; si no lo tienen, produce un error que explica el motivo.
-
-## Milestone 1: El problema de los horarios, resuelto y probado
-
-**Qué es:** la solución del problema de la HU001, es decir, su lógica de negocio, programada sobre el milestone 0 y acompañada de tests.
-
-**Requisito técnico:** la validez se comprueba de forma automática: el gestor de tareas del proyecto ejecuta los tests y todos tienen que pasar.
+Parte del milestone 0 y añade, para la misma HU001, la lógica de negocio con sus tests, que cubren también las situaciones de error. Es válido cuando pasan todos los tests.
